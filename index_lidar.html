@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #dff5ff; text-align: center;">
+    <header>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#type">종류</a>
+            <a href="#info">영상</a>
+        </nav>
+    </header>
+    <main>
+        <br><br><br>
+        <section id="home">
+            <img src="images/thumb.png" alt="라이다">
+            <br><br>
+            <h1>라이다란?</h1>
+            <p><em>빛을 이용한 레이더로 자율주행자, 로봇 등의 눈이 되는 핵심 센서이다.</em></p>
+            <br>
+        </section>
+        <br><br>
+        <section id="type">
+            <br><br><hr width="50"><br><br><br><br>
+            <h2>구동방식에 따른 라이다의 종류</h2>
+
+            <table style="margin: auto; border-collapse: collapse;">
+                <tr style="background-color: black; color: #beedff; height: 40px;">
+                    <th colspan="2">종류</th>
+                </tr>
+                <tr style="margin-bottom: 25px;">
+                    <td style="text-align: justify; width: 720px; border-bottom: 1px solid #000; padding: 0 10px;">
+                        <div style="text-align: center;"><b>Spinning Lidar</b></div><br>
+                        모터를 이용하여 물리적으로 센서를 회전시켜 주변을 스캔한다.<br><br>
+                        장점: 넓은 수평 시야각(360도). 상대적으로 좋은 데이터 정확도.<br>
+                        단점: 모터가 있기 때문에 가격이 비싸고 내구성이 약함. 360도를 봐야 해서 매립해서 사용할 수 없음. 낮은 해상도.<br>
+                    </td>
+                    <td><img src="images/다운로드.png" alt="Spinning Lidar 이미지"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: justify; width: 720px; padding: 25px 10px;">
+                        <div style="text-align: center;"><b>Scanning Lidar</b></div><br>
+                        모터가 없는, 한 방향을 스캔하는 라이다. 흔히 solid state lidar라고 불리지만 스캔방식에 따라 moving parts가 있는 방식도 있고 없는 방식도 있다. 통상적으로 moving parts가 있는 방식은 hybird solid state lidar라고 부르고, moving parts가 없는 방식은 true solid state lidar라고 부른다. <br><br> 
+                        장점: 모터가 없어서 가격이 저렴하고 내구성이 좋음, 소형화 할 수 있음. 한 방향만 스캔하기 때문에 매립해서 사용할 수 있음. 높은 해상도.<br>  
+                        단점: 좁은 수평 시야각. 상대적으로 떨어지는 데이터 정확도.<br>
+                    </td>
+                    <td style="text-align: left; width: 400px; border-top: 1px solid #000; padding: 25px 10px;">    
+                        <b>1. MEMS Lidar</b><br>
+                        전압으로 기울기가 달라지는 작은 미러를 사용해서 스캔하는 방식.<br>
+                        <img src="images/mnm.png" alt="MEMS Lidar 이미지" style="max-width: 150px;"><br><br>
+                        
+                        <b>2. OPA Lidar</b><br>
+                        광학 위상 모듈레이터가 렌즈를 통과하는 빛의 속도를 제어하여 전방으로 나가는 빛의 파면 형상을 제어하고 빔을 여러 방향으로 쏘아 스캔하는 방식.<br>
+                        <img src="images/op.png" alt="OPA Lidar 이미지" style="max-width: 150px;"><br><br>
+                        
+                        <b>3. Flash Lidar</b><br>
+                        레이저를 전방에 비추고 레이저 가까이 위치한 수신기에서 반사된 산란광을 포착, 단 하나의 이미지로 전체 장면을 포착하는 방식.<br>
+                        <img src="images/light.png" alt="Flash Lidar 이미지" style="max-width: 150px;"><br>
+                    </td>                    
+                </tr>                
+            </table>            
+            <a href="http://www.lumisol.co.kr/sub/reference/lidar.asp?mode=view&bid=4&s_type=&s_keyword=&s_cate=&idx=162&page=1">출처</a>
+        </section>
+        <br><br>
+        <section id="info">
+            <br><br><hr width="50"><br><br><br><br>
+            <h2>영상</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZnKE5bGrRXk?si=NW3ozGc5TpOE95EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <br><br><hr width="50"><br><br>
+        </section>
+    </main>
+    <footer style="background-color: black;color: #beedff;height: 35px;">
+        <p>제천제일고 2024</p>
+    </footer>
+</body>
+</html>
